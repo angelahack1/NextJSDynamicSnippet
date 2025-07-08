@@ -1,0 +1,24 @@
+{
+  "name": "nextnsdynamicsnippet",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "npx serve@latest out -p 31000",
+    "lint": "next lint",
+    "clean_windows": "(if exist node_modules rd /s /q node_modules) && (if exist node_modules rd /s /q .next) && (if exist .next rd /s /q .next) && (if exist out rd /s /q out) && (if exist package-lock.json del package-lock.json)",
+    "clean_linux": "rm -rf node_modules .next out && rm -f package-lock.json"
+  },
+  "dependencies": {
+    "next": "15.3.5",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@types/node": "24.0.11",
+    "@types/react": "19.1.8",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.3"
+  }
+}
