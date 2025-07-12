@@ -11,7 +11,7 @@ export default function PageLoadHandler({ children }: PageLoadHandlerProps) {
 
     const handleDOMReady = () => {
       console.log('DOM is ready for product catalog!');
-      //...      
+      //...
     };
 
     const handlePageLoad = () => {
